@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="left " >
+        <div class="upper">
+            <a href="#" class="logo dflex t">
+                <img class="invert" src="./public/svg/spotify logo.svg" alt="spotify logo">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="#" class="home  dflex">
+                <img class="invert" width="24px" src="./public/svg/home.svg" alt="home button">
+                <div>Home</div>
+            </a>
+            <a href="#" class="search dflex">
+                <img width="24px" src="./public/svg/search.svg" alt="search button">
+                <div>search</div>
+            </a>
+        </div>
+        <div class="lower">
+            <a href="#" class="library dflex">
+                <div class="library-img--text dflex">
+                    <img width="24px" src="./public/svg/yourlibrary.svg" alt="yourlibrary button">
+                    <div>Your Library</div>
+                </div>
+                <div class="plus-icon">
+                    <img width="16px" src="./public/svg/plusicon.svg" alt="plus icon for more">
+                </div>
+            </a>
+            <div class="content-div">
+
+            </div>
+            <div class="footer_container">
+                <div class="footer">
+                    <div class="item dflex">
+                        <a href="#">Legal</a><a href="#">Safety & Privacy Center</a>
+                    </div>
+                    <div class="item dflex">
+                        <a href="#">PrivacyPolicy</a><a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                    </div>
+                    <div class="item dflex">
+                        <a href="#">Accessibility</a>
+    
+                    </div>
+                    <a href="#">Cookies</a>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="navigation">
+            <div class="dflex">
+                <div class="arrow-div dflex">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                    <img id="heroSectionLogo" class="invert"   src="./public/svg/spotify logo.svg" alt="spotify logo">
+                </div>
+            
+                <div class="login-div">
+                    <button class="signin register-btn ">SignIn</button>
+                    <button class="login register-btn">LogIn</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-song--selection---area grid grid-cols grid-rows">
+        </div>
+
+       
+
+        <template class="template">
+            <div class="card">
+                <div class="card-img-container"><img class="card-img" src="" alt=" "></div>
+                <div class="title-song"></div>
+                <div class="artist-details"></div>
+            </div>
+        </template>
+
+
+
+
+        <section class="section-playbar">
+            <div class="play-line">
+                <div class="duration-time dflex">
+                    <div class="running-time">00:00</div>
+                    <div class="songTitle"></div>
+                    <div class="end-time">00:00</div>
+                </div>
+
+                <div class="line">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="play-control">
+                <div class="grid grid-three-cols">
+                    <div class="play-main--controls dflex">
+                        <i class="fa-sharp fa-solid fa-backward-step"></i>
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                        <i class="fa-sharp fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="controlVolume">
+                        <div class="dflex">
+                            <i class="fa-sharp fa-solid fa-volume-high"></i>
+                            <input id="range" type="range" min="0" max="100" value="100">
+                            <div class="valLabel">100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/main.js"></script>
+<!-- <script src="./src/handleSideBar.js"></script> -->
+<script src=""></script>
+<script>
+        console.log("hrlllo")
+</script>
+</body>
+
+</html>
