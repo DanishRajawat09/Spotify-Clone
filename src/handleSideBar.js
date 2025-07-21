@@ -16,7 +16,7 @@ document.querySelector(".fa-bars").addEventListener("click", (e) => {
       let hero = document.querySelector(".hero-section")
 
 
-      console.log("danish");
+     
 
 
 

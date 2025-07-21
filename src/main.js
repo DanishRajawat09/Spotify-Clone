@@ -96,7 +96,7 @@ function nextPrevious(audio) {
    const previous = document.querySelector(".fa-backward-step");
 
    next.addEventListener("click", () => {
-      handleSongChange(audio, 1);
+      handleSongChange(audio, +1);
    });
 
    previous.addEventListener("click", () => {
@@ -110,7 +110,9 @@ function handleSongChange(audio, direction) {
    let songSrc = songArray.join("/");
    let index = songs.indexOf(songSrc);
 
-   let newIndex = index + direction;
+
+   let newIndex = direction === +1 ? index + 1 : index - 1;
+
    if (newIndex >= 0 && newIndex < songs.length) {
       audio.src = songs[newIndex];
       document.querySelector(".songTitle").innerText = `${songName[newIndex]} | ${artistArr[newIndex]}`;
